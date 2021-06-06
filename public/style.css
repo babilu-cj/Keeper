@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #292b30;
+    overflow-x: hidden;
+    /* background-image: url("https://www.transparenttextures.com/patterns/cartographer.png"); */
+    background-image: radial-gradient(#bfc0c169 4%, transparent 0);
+    background-size: 25px 25px;
+}
+
+footer{
+    width: 100vw;
+    margin: 1vmin 0;
+    text-align: center;
+    color: #f8f5f167;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #f8f5f1;
+    margin: 5px 0;
+}
+
+h4{
+    font-weight: 400;
+    /* color: #cdcdcd; Hover colour */
+}
+
+header{
+    background-color: #136d53;
+    /* background-image: url("https://www.transparenttextures.com/patterns/food.png"); */
+    background-image: url("https://www.transparenttextures.com/patterns/flowers.png");
+    padding: 1.1vmin 12vmin;
+    box-shadow: 0 2px 10px rgb(20, 20, 20);
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+    height: 50px;
+}
+
+p{
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.body-container{
+    padding: 6vmin 12vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.note{
+    background-color: #ebecf1e3;
+    min-width: 35vmin;
+    max-width: 79vmin;
+    padding: 2vmin;
+    padding-bottom: 4vmin;
+    border-radius: 5px;
+    box-shadow: 3px 4px 7px 2px rgb(10, 10, 10);
+    margin:0 5vmin 5vmin 0;
+    flex: 1;
+    position: relative;
+    line-height: 1.5;
+}
+
+.note:hover{
+    background-color: white;
+}
+
+.note h4{
+    margin: 1vmin 1vmin 2vmin;
+    font-size: 2.2vmin;
+}
+
+.note p{
+    margin: 0 1vmin 1vmin;
+}
+
+.newNote{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 7vmax auto 2vmax;
+    padding: 2vmin;
+    position: relative;
+}
+
+.newNote input,textarea{
+    border: 0;
+    margin-bottom: 5px;
+    box-shadow: 3px 4px 12px 2px rgb(15, 15, 15);
+    min-height: 5vmin;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.newNote input{
+   border-radius: 5px 5px 0 0;
+}
+
+.newNote textarea{
+    border-bottom-left-radius: 5px;
+    resize: vertical;
+    max-height: 25vmin;
+    line-height: 1.8;
+}
+
+.newNote button{
+    position: absolute;
+    width: 7vmin;
+    height: 7vmin;
+    border: none;
+    border-radius: 50%;
+    background-color: #168062;
+    background-image: url("https://www.transparenttextures.com/patterns/flowers.png");
+    bottom: -1vmin;
+    right: 8vmin;
+    font-family: 'Montserrat', sans-serif;
+    color: #f8f5f1;
+    font-size: 5vmin;
+    font-weight: bolder;
+    box-shadow: 3px 4px 12px 2px rgb(12, 12, 12);
+    cursor: pointer;
+}
+.newNote button:hover{
+    transform: scale(1.1);
+}
+
+.note button{
+    position: absolute;
+    border: none;
+    bottom: 10px;
+    right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #168062;
+    font-size: large;
+    background: none;
+    cursor: pointer;
+}
+
+.note button:hover{
+    transform: scale(1.1);
+}
